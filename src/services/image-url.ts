@@ -1,6 +1,5 @@
 import noImage from '../assets/no-image-placeholder.webp';
 
-
 const getCroppedImageUlr = (url: string) => {
     
 if (! url) return noImage;
