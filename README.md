@@ -2,6 +2,8 @@
 
 game app with react 18, chakra ui and rawg.io api
 
+![My logo](public/images/2024-06-01_13-31.png)
+
 ## Installation
 
 1- clone the project
