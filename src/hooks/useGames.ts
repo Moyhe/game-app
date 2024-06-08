@@ -4,16 +4,17 @@ import APIClietn, {FetchResponse} from "../services/api-client";
 import { Platform } from "../hooks/usePlatforms";
 import ms from "ms";
 
-const apiClient = new APIClietn<Game>('/games');
 export interface Game {
-    id: number;
-    name: string;
-    background_image: string,
-    parent_platforms: { platform: Platform }[],
-    metacritic: number;
-    rating_top: number;
-  }
-  
+  id: number;
+  name: string;
+  background_image: string,
+  parent_platforms: { platform: Platform }[],
+  metacritic: number;
+  rating_top: number;
+}
+
+const apiClient = new APIClietn<Game>('/games');
+
 const useGames = (gameQuery: GameQuery) =>
   
   useInfiniteQuery<FetchResponse<Game>, Error>({
